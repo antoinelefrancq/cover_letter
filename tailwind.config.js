@@ -1,18 +1,26 @@
 /** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
-  theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+export const content = [
+  './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+  './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+  './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+];
+export const theme = {
+  extend: {
+    colors: {
+      'w-dark-blue': '#003c70',
+      'w-text-blue': '#0F1B5C',
+      'w-blue': '#113BC9',
+      'w-orange': '#FE8403',
+      'w-light-orange': '#F3953F',
+      'w-lighter-orange': '#FFCD00',
+      'w-grey': '#7F8293',
     },
+    backgroundImage: {
+      'index': "url('/images/landscape.png')",
+      'company': "url('/images/gas_meter.png')",
+      'contact': "url('/images/guadeloupe.jpg')",
+      'me': "url('/images/workingEnvironment.png')"
+    }
   },
-  plugins: [],
-}
+};
+export const plugins = [];
