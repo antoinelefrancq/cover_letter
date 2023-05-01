@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 export default function Home() {
   const url = 'bg-index'
-  const title = 'En recherce d\'alternance'
+  const title = 'En recherche d\'alternance'
 
   return (
     <Layout>
@@ -12,9 +12,9 @@ export default function Home() {
         <title>Page d&apos;accueil</title>
       </Head>
       <Header title={title} url={url} />
-      <section className="flex flex-row w-[80vw] m-auto justify-between gap-2 mb-12">
+      <section className="flex sm:flex-row flex-col w-[80vw] m-auto justify-between gap-2 mb-12 relative">
         <h2 className="block text-4xl leading-[70px] tracking-tight font-bold">Un alternant engagé dans son apprentissage et dans son &quot;futur&quot; métier.</h2>
-        <article className="flex flex-col">
+        <article className="flex flex-col -mx-[8vw] sm:mx-0">
           <p className=" m-3">
             En recherche d&apos;un emploi, j&apos;ai premièrement commencé par rechercher un CDD ou CDI. 
           </p>
@@ -32,7 +32,7 @@ export default function Home() {
       </section >
       <section className="flex flex-col w-screen items-center py-24 bg-white">
         <h2 className="w-[70vw] block text-4xl leading-[70px] tracking-tight font-bold">Je vous invite à consulter les autres pages qui appuient ma demande.</h2>
-        <article className="mt-12">
+        <article className="mt-12 sm:mx-0 mx-2">
           <p className=" m-3">L&apos;objectif de ce site web est d&apos;appuyer ma candidature auprès de vous en s&apos;inspirant du thème général de votre propre site web.</p>
           <p className=" m-3">Afin d&apos;y parvenir, j&apos;ai employé de nombreux outils, dont :</p>
           <ul className="ml-6">

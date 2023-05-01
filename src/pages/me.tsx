@@ -13,25 +13,25 @@ const url = 'bg-me'
         <title>L&apos;alternant</title>
       </Head>
       <Header title={title} url={url} />
-      <section className="relative flex flex-row w-[80vw] m-auto justify-between gap-2 mb-12">
+      <section className="relative flex sm:flex-row flex-col w-[80vw] m-auto justify-between gap-2 mb-12 ">
         <article className='flex flex-col'>
           <h2 className="text-4xl leading-[70px] text-center tracking-tight font-bold">Antoine Lefrancq</h2>
           <h2 className="text-4xl leading-[70px] text-center tracking-tight font-bold">Développeur Web et Web Mobile Fullstack</h2>
           
-          <p className='m-3'>Depuis ma certification du titre en décembre 2022, j&apos;ai continué de me former afin d&apos;acquérir de nouvelles compétences et d&apos;en renforcer d&apos;autres.</p>
-          <p className='m-3'>J&apos;ai appris le développement web en suivant la formation de développeur fullstack JavaScript de l&apos;<Link href={"https://oclock.io/formations/developpeur-web-fullstack-javascript"} className=' text-w-blue font-semibold hover:underline'>école O&apos;clock</Link>.</p>
-          <p className='m-3'>Mais j&apos;avais déjà codé en C++ au lycée et j&apos;ai pu entrainer ma logique et mes capacités en algorithmie pendant mes études supérieures d&apos;enseignant en mathématiques.</p>
+          <p className='sm:m-3 my-3'>Depuis ma certification du titre en décembre 2022, j&apos;ai continué de me former afin d&apos;acquérir de nouvelles compétences et d&apos;en renforcer d&apos;autres.</p>
+          <p className='sm:m-3 my-3'>J&apos;ai appris le développement web en suivant la formation de développeur fullstack JavaScript de l&apos;<Link href={"https://oclock.io/formations/developpeur-web-fullstack-javascript"} className=' text-w-blue font-semibold hover:underline'>école O&apos;clock</Link>.</p>
+          <p className='sm:m-3 my-3'>Mais j&apos;avais déjà codé en C++ au lycée et j&apos;ai pu entrainer ma logique et mes capacités en algorithmie pendant mes études supérieures d&apos;enseignant en mathématiques.</p>
         </article>
-        <div className='relative w-2/3 min-w-[400px] min-h-[450px] '>
+        <div className='relative sm:w-2/3 w-full sm:min-w-[400px] min-h-[450px] self-start'>
           <Image
           priority
           src="/images/antoine.png"
-          className='object-contain '
+          className='sm:object-contain object-cover '
           fill
           alt='Photo d&apos;Antoine' />
         </div>
       </section >
-      <section className="flex flex-col w-screen items-center py-24 bg-white">
+      <section className="flex flex-col w-screen items-center sm:py-24 py-8 bg-white">
         <h2 className="w-[70vw] block text-4xl leading-[70px] tracking-tight font-bold text-center">Qui suis-je ?</h2>
         <article className="mt-16">
           <p className=" m-3">Ma passion est la plongée sous-marine. J&apos;aime pratiquer le badminton, l&apos;escalade et aller la musculation. Je danse régulièrement la salsa et la bachata.</p>
@@ -40,7 +40,7 @@ const url = 'bg-me'
           <p className='m-3'>Mes points à améliorer sont la prise de décision et la structure de mon code. Je dois également approfondir mes connaissances en référencement, en sécurité et dans la réalisation de tests.</p>
         </article>
       </section>
-      <section className="flex flex-col w-[80vw] items-center py-24 mx-auto">
+      <section className="flex flex-col w-[80vw] items-center sm:py-24 py-8 mx-auto">
         <h2 className="w-[70vw] block text-4xl leading-[70px] tracking-tight font-bold text-center">Du côté technique :</h2>
         <article className="mt-16">
           <p className=" m-3">Je pense être performant en JavaScript, React et Node.js avec le framework Express, ainsi qu&apos;avec la base de données PostgresSQL. Toutefois, j&apos;ai déjà utilisé Typescript, Sass et Tailwind et Redux en front-end. J&apos;ai pu travailler avec des api GraphQL et avec la base de données MongoDB. La dernière technologie à laquelle je m&apos;initie est Next.js. Je suis à l&apos;aise avec l&apos;utilisation d&apos;IA telles que ChatGPT et Midjourney.</p>
