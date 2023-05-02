@@ -78,15 +78,15 @@ export default function Contact() {
             {errors.message && <span className="text-w-orange">{errors.message?.message}</span>}
           </div>
           {isSubmitting ? 
-          <div className='flex items-center justify-center'>
+          <div className='flex flex-row items-center justify-center '>
             <Loader/>
           </div> :
           <button type='submit' disabled={!isValid}
-          className={'mb-24 px-5 py-3 font-medium uppercase text-xs bg-w-orange text-white ease-in duration-300 rounded-sm w-2/5 mx-auto'+ (isValid ? ' hover:scale-90 hover:bg-w-blue mx-auto' : '')}
+          className={'mb-24 px-16 py-3 font-medium uppercase text-xs bg-w-orange text-white ease-in duration-300 rounded-sm  mx-auto'+ (isValid ? ' hover:scale-90 hover:bg-w-blue mx-auto' : '')}
           >
             Envoyer   
           </button>
-          }          
+          }       
         </form>
         
     </Layout>

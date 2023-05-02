@@ -27,6 +27,8 @@ body {
   height: 150px;
   transform: rotate(90deg);
   padding-bottom: 10rem;
+  scale: 0.5;
+  translate: -20px;
 }
 
 .loader g {
@@ -73,7 +75,7 @@ body {
   }
   100% {
     stroke-dasharray: 157px 157px;
-    stroke-dashoffset: -156px;
+    stroke-dashoffset: -157px;
   }
 }
 
